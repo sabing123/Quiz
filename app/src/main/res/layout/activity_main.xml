@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#798a7e"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:orientation="horizontal">
+
+        <!--team a design-->
+        <LinearLayout style="@style/layoutdesign">
+
+            <TextView
+                style="@style/textviewdesign"
+                android:layout_margin="32dp"
+                android:text="Team A" />
+
+            <TextView
+                android:id="@+id/scorea"
+                style="@style/textviewdesign"
+                android:layout_margin="16dp"
+                android:text="0" />
+<!--aaa-->
+            <Button
+                android:id="@+id/btn1"
+                style="@style/btnpoints"
+                android:layout_margin="16dp"
+                android:text="+1 Point" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/btnpoints"
+                android:layout_margin="16dp"
+                android:text="+2 Point" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/btnpoints"
+                android:layout_margin="16dp"
+                android:text="+5 Point"
+
+                />
+        </LinearLayout>
+
+        <view style="@style/view" />
+
+        <!--    team b design-->
+        <LinearLayout style="@style/layoutdesign">
+
+            <TextView
+                style="@style/textviewdesign"
+                android:layout_margin="32dp"
+                android:text="Team B" />
+
+            <TextView
+                android:id="@+id/scoreb"
+                style="@style/textviewdesign"
+                android:layout_margin="16dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/btnpoints"
+                android:layout_width="wrap_content"
+                android:layout_margin="16dp"
+                android:text="+1 Point" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/btnpoints"
+                android:layout_margin="16dp"
+                android:text="+2 Point" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/btnpoints"
+                android:layout_margin="16dp"
+                android:text="+5 Point" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/submitbtn"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="0dp" />
+</RelativeLayout>
